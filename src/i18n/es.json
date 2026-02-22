@@ -97,9 +97,9 @@
   },
   "posts": {
     "sectionTitle": "Publicaciones",
-    "sectionSubtitle": "Artículos y novedades sobre temas contables, impositivos y financieros.",
-    "readMore": "Leer más",
-    "viewAll": "Ver todas las publicaciones"
+    "sectionSubtitle": "Compartimos artículos, novedades y consejos sobre temas contables, impositivos y financieros. Seguinos en LinkedIn para estar al día.",
+    "followUs": "Seguinos en LinkedIn",
+    "visualText": "Novedades y contenido profesional"
   },
   "contact": {
     "sectionTitle": "Contacto",

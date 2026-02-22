@@ -97,9 +97,9 @@
   },
   "posts": {
     "sectionTitle": "Posts",
-    "sectionSubtitle": "Articles and updates on accounting, tax, and financial topics.",
-    "readMore": "Read more",
-    "viewAll": "View all posts"
+    "sectionSubtitle": "We share articles, updates, and tips on accounting, tax, and financial topics. Follow us on LinkedIn to stay up to date.",
+    "followUs": "Follow us on LinkedIn",
+    "visualText": "News and professional content"
   },
   "contact": {
     "sectionTitle": "Contact",
