@@ -1,0 +1,74 @@
+---
+import { getCollection } from 'astro:content';
+import { getTranslations, type Locale } from '../i18n/utils';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = getTranslations(locale);
+const isEn = locale === 'en';
+
+const allPosts = await getCollection('posts');
+const posts = allPosts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+
+<section id="posts" class="reveal py-20 lg:py-28 bg-background-alt">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section header -->
+    <div class="text-center mb-16">
+      <h2 class="font-display text-3xl sm:text-4xl font-bold text-primary mb-4">
+        {t.posts.sectionTitle}
+      </h2>
+      <div class="w-16 h-1 bg-primary-light mx-auto mb-6 rounded-full"></div>
+      <p class="text-text-light text-lg max-w-2xl mx-auto">
+        {t.posts.sectionSubtitle}
+      </p>
+    </div>
+
+    <!-- Posts grid -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {posts.map((post) => {
+        const title = isEn && post.data.titleEn ? post.data.titleEn : post.data.title;
+        const description = isEn && post.data.descriptionEn ? post.data.descriptionEn : post.data.description;
+        const dateStr = post.data.date.toLocaleDateString(isEn ? 'en-US' : 'es-AR', {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+        });
+
+        return (
+          <a
+            href={post.data.externalUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group bg-background rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-transparent hover:border-primary-light/20"
+          >
+            {/* Image placeholder */}
+            <div class="aspect-video bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center">
+              <svg class="w-12 h-12 text-primary/20 group-hover:text-primary-light/40 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+              </svg>
+            </div>
+            <div class="p-6">
+              <time datetime={post.data.date.toISOString().split('T')[0]} class="text-primary-light text-sm font-medium">{dateStr}</time>
+              <h3 class="font-display text-lg font-semibold text-primary mt-2 mb-2 group-hover:text-primary-light transition-colors">
+                {title}
+              </h3>
+              <p class="text-text-light text-sm leading-relaxed mb-4">
+                {description}
+              </p>
+              <span class="inline-flex items-center gap-1 text-primary-light text-sm font-medium group-hover:gap-2 transition-all">
+                {t.posts.readMore}
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </span>
+            </div>
+          </a>
+        );
+      })}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,56 @@
+---
+import { getTranslations, type Locale } from '../i18n/utils';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = getTranslations(locale);
+
+const stats = [
+  { value: t.about.stats.yearsValue, label: t.about.stats.years },
+  { value: t.about.stats.clientsValue, label: t.about.stats.clients },
+  { value: t.about.stats.consultationsValue, label: t.about.stats.consultations },
+];
+---
+
+<section id="about" class="reveal py-20 lg:py-28 bg-background">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <!-- Photo -->
+      <div class="relative">
+        <div class="aspect-[4/5] rounded-2xl overflow-hidden border border-primary/10">
+          <img src="/images/socios/socios-gral.png" alt="Equipo de Business Case Consultores" class="w-full h-full object-cover" />
+        </div>
+        <!-- Decorative accent -->
+        <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-primary-light/20 rounded-2xl -z-10"></div>
+        <div class="absolute -top-4 -left-4 w-16 h-16 bg-primary/10 rounded-2xl -z-10"></div>
+      </div>
+
+      <!-- Content -->
+      <div>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-primary mb-6">
+          {t.about.sectionTitle}
+        </h2>
+        <div class="w-16 h-1 bg-primary-light mb-8 rounded-full"></div>
+        <p class="text-text-light text-lg leading-relaxed mb-4">
+          {t.about.description}
+        </p>
+        <p class="text-text-light text-lg leading-relaxed mb-10">
+          {t.about.description2}
+        </p>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-3 gap-6">
+          {stats.map((stat) => (
+            <div class="text-center p-4 bg-background-alt rounded-xl">
+              <div class="text-3xl font-bold text-primary-light mb-1">{stat.value}</div>
+              <div class="text-sm text-text-light">{stat.label}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

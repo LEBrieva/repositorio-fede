@@ -1,0 +1,116 @@
+---
+import LanguageSwitcher from './LanguageSwitcher.astro';
+import { getTranslations, type Locale } from '../i18n/utils';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = getTranslations(locale);
+
+const navLinks = [
+  { href: '#about', label: t.nav.about },
+  { href: '#services', label: t.nav.services },
+  { href: '#experience', label: t.nav.experience },
+  { href: '#allies', label: t.nav.allies },
+  { href: '#posts', label: t.nav.posts },
+  { href: '#contact', label: t.nav.contact },
+];
+---
+
+<header
+  id="main-header"
+  class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-gradient-to-r from-[#0a3265] to-[#145da0]"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+      <!-- Logo -->
+      <a href={locale === 'en' ? '/en/' : '/'} class="flex items-center">
+        <img src="/images/logos/logo-claro.png" alt="Business Case" class="h-10" />
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8" aria-label="Main navigation">
+        {navLinks.map((link) => (
+          <a
+            href={link.href}
+            class="text-white/80 hover:text-accent text-sm font-medium transition-colors"
+          >
+            {link.label}
+          </a>
+        ))}
+        <LanguageSwitcher locale={locale} />
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button
+        id="mobile-menu-btn"
+        class="md:hidden text-white p-2"
+        aria-label="Toggle menu"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div
+    id="mobile-menu"
+    class="md:hidden hidden bg-primary border-t border-white/10"
+  >
+    <nav class="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-4" aria-label="Mobile navigation">
+      {navLinks.map((link) => (
+        <a
+          href={link.href}
+          class="mobile-nav-link text-white/80 hover:text-accent text-base font-medium transition-colors"
+        >
+          {link.label}
+        </a>
+      ))}
+      <div class="pt-2 border-t border-white/10">
+        <LanguageSwitcher locale={locale} />
+      </div>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const header = document.getElementById('main-header')!;
+  const mobileBtn = document.getElementById('mobile-menu-btn')!;
+  const mobileMenu = document.getElementById('mobile-menu')!;
+  const menuIcon = document.getElementById('menu-icon')!;
+
+  // Sticky header shadow on scroll
+  function updateHeader() {
+    if (window.scrollY > 50) {
+      header.classList.add('shadow-lg');
+    } else {
+      header.classList.remove('shadow-lg');
+    }
+  }
+  window.addEventListener('scroll', updateHeader);
+  updateHeader();
+
+  // Mobile menu toggle
+  let menuOpen = false;
+  mobileBtn.addEventListener('click', () => {
+    menuOpen = !menuOpen;
+    mobileMenu.classList.toggle('hidden');
+    menuIcon.setAttribute(
+      'd',
+      menuOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'
+    );
+  });
+
+  // Close mobile menu on link click
+  document.querySelectorAll('.mobile-nav-link').forEach((link) => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      menuOpen = false;
+      menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+    });
+  });
+</script>

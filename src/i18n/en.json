@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "about": "About Us",
+    "services": "Services",
+    "experience": "Experience",
+    "allies": "Partners",
+    "posts": "Posts",
+    "contact": "Contact"
+  },
+  "hero": {
+    "name": "BC Consultores",
+    "title": "Accounting and financial advisory for real businesses",
+    "tagline": "We help SMEs and startups that need to organize their numbers and make decisions with clarity.",
+    "cta": "Get in Touch"
+  },
+  "about": {
+    "sectionTitle": "About Us",
+    "description": "Business Case was founded with the purpose of helping medium and large companies professionalize their management, streamline processes, and scale results with human leadership. We believe that true change is not only measured in numbers — it is also measured in thriving teams, sustainable cultures, and systems that keep working when the leader is no longer there.",
+    "description2": "Founded by Federico Cuadra, a Public Accountant (UBA) with over 20 years of experience leading financial and operational transformations at companies like Cervecería Quilmes and Cervepar. Today, Federico helps companies looking to scale with order, clarity, and purpose, applying real and measurable solutions from his hands-on experience.",
+    "stats": {
+      "years": "Years of Experience",
+      "yearsValue": "+20",
+      "clients": "Clients Served",
+      "clientsValue": "+50",
+      "consultations": "Projects Completed",
+      "consultationsValue": "+100"
+    }
+  },
+  "services": {
+    "sectionTitle": "Services",
+    "sectionSubtitle": "We work to give you control over your business. We help you keep your accounting up to date, gain clarity on profitability, and make decisions based on real numbers.",
+    "block1Title": "Accounting, Tax & Payroll Administration",
+    "block2Title": "Strategic Consulting",
+    "serviceCta": "Ask us",
+    "items": [
+      {
+        "title": "Accounting & Reporting",
+        "description": "Clear balance sheets and reports that make sense. Organized accounting information for better decision-making."
+      },
+      {
+        "title": "Tax Advisory",
+        "description": "Tax planning and filing of tax returns. Fiscal optimization tailored to your situation."
+      },
+      {
+        "title": "Preventive Management",
+        "description": "We project taxes to avoid surprises. We anticipate fiscal scenarios and detect risks early."
+      },
+      {
+        "title": "Payroll Administration",
+        "description": "Salaries, payroll, and everything related to your team. Complete management of labor obligations and social charges."
+      },
+      {
+        "title": "Financial Management",
+        "description": "Clear indicators to know if you're on track. We improve metrics like EBITDA, cash flow, and productivity."
+      },
+      {
+        "title": "Sustainable Processes",
+        "description": "We identify improvements to make your operations more efficient. We optimize internal processes with impact measurement."
+      },
+      {
+        "title": "Project Management",
+        "description": "We support transformations to organize and grow. We design efficient and scalable structures."
+      }
+    ]
+  },
+  "experience": {
+    "sectionTitle": "Experience",
+    "founderName": "Federico Cuadra",
+    "founderRole": "Founder & Director",
+    "founderBio": "Public Accountant (UBA) with over 20 years of experience in the corporate world — 15 of them at Cervecería Quilmes — where he led strategic transformations in key areas such as taxes, management control, and financial planning. He has managed teams in multicultural contexts and across different countries in the region.",
+    "originTitle": "The origin of Business Case",
+    "originText": "Business Case was born from the conviction that companies need more than an accountant: they need a strategic partner who understands their business from the inside. We combine strategic vision, closeness, and real experience to support companies looking to scale with order and purpose."
+  },
+  "allies": {
+    "sectionTitle": "Partner Network",
+    "sectionSubtitle": "We have a network of accountants specialized in taxation to provide a technical and up-to-date service, adapted to each company's needs.",
+    "members": [
+      {
+        "name": "Carolina Bonomi",
+        "role": "Partner at DM Consultores",
+        "specialty": "Tax planning and regulatory compliance.",
+        "linkedin": "https://www.linkedin.com/in/carolina-bonomi-96731625/"
+      },
+      {
+        "name": "Daniela Monteagudo",
+        "role": "Founder of DM Consultores",
+        "specialty": "Tax advisory for SMEs across multiple sectors.",
+        "linkedin": "https://www.linkedin.com/in/daniela-romina-monteagudo-38a52815b/"
+      },
+      {
+        "name": "Matías Denis",
+        "role": "Partner at DM Consultores",
+        "specialty": "Accounting processes, payroll management, and tax compliance.",
+        "linkedin": "https://www.linkedin.com/in/matiasdenis/"
+      }
+    ]
+  },
+  "posts": {
+    "sectionTitle": "Posts",
+    "sectionSubtitle": "Articles and updates on accounting, tax, and financial topics.",
+    "readMore": "Read more",
+    "viewAll": "View all posts"
+  },
+  "contact": {
+    "sectionTitle": "Contact",
+    "sectionSubtitle": "Need accounting or financial advisory? Don't hesitate to reach out.",
+    "info": {
+      "email": "fede.businesscase@gmail.com",
+      "phone": "+54 9 11 4438-1857",
+      "address": "Buenos Aires, Argentina",
+      "schedule": "Monday to Friday, 9:00 AM - 6:00 PM"
+    },
+    "form": {
+      "name": "Full name",
+      "email": "Email address",
+      "message": "Your message",
+      "send": "Send Message"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "quickLinks": "Navigation",
+    "social": "Social Media"
+  }
+}

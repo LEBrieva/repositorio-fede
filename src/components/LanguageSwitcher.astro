@@ -1,0 +1,32 @@
+---
+import type { Locale } from '../i18n/utils';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const isEs = locale === 'es';
+---
+
+<div class="flex items-center gap-1 text-sm font-medium">
+  <a
+    href="/"
+    class:list={[
+      'px-2 py-1 rounded transition-colors',
+      isEs ? 'bg-primary-light text-white font-bold' : 'text-white/70 hover:text-white',
+    ]}
+  >
+    ES
+  </a>
+  <span class="text-white/40">|</span>
+  <a
+    href="/en/"
+    class:list={[
+      'px-2 py-1 rounded transition-colors',
+      !isEs ? 'bg-primary-light text-white font-bold' : 'text-white/70 hover:text-white',
+    ]}
+  >
+    EN
+  </a>
+</div>

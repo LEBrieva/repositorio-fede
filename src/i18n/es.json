@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "about": "Nosotros",
+    "services": "Servicios",
+    "experience": "Experiencia",
+    "allies": "Aliados",
+    "posts": "Publicaciones",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "name": "BC Consultores",
+    "title": "Asesoramiento contable y financiero para negocios reales",
+    "tagline": "Acompañamos a pymes y emprendimientos que necesitan ordenar sus números y tomar decisiones con claridad.",
+    "cta": "Contactanos"
+  },
+  "about": {
+    "sectionTitle": "Nosotros",
+    "description": "Business Case nace con el propósito de acompañar a empresas medianas y grandes a profesionalizar su gestión, ordenar procesos y escalar resultados con liderazgo humano. Creemos que el verdadero cambio no solo se mide en números: también se mide en los equipos que prosperan, en las culturas que se sostienen y en los sistemas que siguen funcionando cuando el líder ya no está.",
+    "description2": "Fundada por Federico Cuadra, Contador Público (UBA) con más de 20 años de trayectoria liderando transformaciones financieras y operativas en compañías como Cervecería Quilmes y Cervepar. Hoy, Federico acompaña a empresas que buscan escalar con orden, claridad y propósito, aplicando soluciones reales y medibles desde su experiencia vivencial.",
+    "stats": {
+      "years": "Años de Experiencia",
+      "yearsValue": "+20",
+      "clients": "Clientes Acompañados",
+      "clientsValue": "+50",
+      "consultations": "Proyectos Realizados",
+      "consultationsValue": "+100"
+    }
+  },
+  "services": {
+    "sectionTitle": "Servicios",
+    "sectionSubtitle": "Trabajamos para que tengas control sobre tu negocio. Te ayudamos a llevar al día la contabilidad, tener claridad sobre la rentabilidad y tomar decisiones con base en los números reales.",
+    "block1Title": "Contable, Impositivo y Administración de Personal",
+    "block2Title": "Consultoría Estratégica",
+    "serviceCta": "Consultanos",
+    "items": [
+      {
+        "title": "Contabilidad y Reporting",
+        "description": "Armado de balances y reportes claros que se entienden. Información contable organizada para la toma de decisiones."
+      },
+      {
+        "title": "Asesoramiento Impositivo",
+        "description": "Planificación y presentación de declaraciones impositivas. Optimización fiscal adaptada a tu situación."
+      },
+      {
+        "title": "Gestión Preventiva",
+        "description": "Proyectamos impuestos para evitar sorpresas. Anticipamos escenarios fiscales y detectamos riesgos a tiempo."
+      },
+      {
+        "title": "Administración de Personal",
+        "description": "Sueldos, nóminas y todo lo relacionado a tu equipo. Gestión completa de obligaciones laborales y cargas sociales."
+      },
+      {
+        "title": "Gestión Financiera",
+        "description": "Indicadores claros para saber si vas bien. Mejoramos indicadores como EBITDA, cash flow y productividad."
+      },
+      {
+        "title": "Procesos Sustentables",
+        "description": "Detectamos mejoras para hacer más eficiente tu operación. Optimizamos procesos internos con medición de impacto."
+      },
+      {
+        "title": "Gestión de Proyectos",
+        "description": "Acompañamos transformaciones para ordenar y crecer. Diseñamos estructuras eficientes y escalables."
+      }
+    ]
+  },
+  "experience": {
+    "sectionTitle": "Experiencia",
+    "founderName": "Federico Cuadra",
+    "founderRole": "Fundador & Director",
+    "founderBio": "Contador Público (UBA) con más de 20 años de experiencia en el mundo corporativo — 15 de ellos en Cervecería Quilmes — donde lideró transformaciones estratégicas en áreas clave como impuestos, control de gestión y planificación financiera. Ha dirigido equipos en contextos multiculturales y en distintos países de la región.",
+    "originTitle": "El origen de Business Case",
+    "originText": "Business Case surge de la convicción de que las empresas necesitan más que un contador: necesitan un socio estratégico que entienda su negocio desde adentro. Combinamos visión estratégica, cercanía y experiencia real para acompañar a empresas que buscan escalar con orden y propósito."
+  },
+  "allies": {
+    "sectionTitle": "Red de Aliados",
+    "sectionSubtitle": "Contamos con una red de contadores especializados en tributación para brindar un servicio técnico y actualizado, adaptado a las necesidades de cada empresa.",
+    "members": [
+      {
+        "name": "Carolina Bonomi",
+        "role": "Socia de DM Consultores",
+        "specialty": "Planificación fiscal y normativa impositiva.",
+        "linkedin": "https://www.linkedin.com/in/carolina-bonomi-96731625/"
+      },
+      {
+        "name": "Daniela Monteagudo",
+        "role": "Fundadora de DM Consultores",
+        "specialty": "Asesoramiento tributario para pymes de múltiples sectores.",
+        "linkedin": "https://www.linkedin.com/in/daniela-romina-monteagudo-38a52815b/"
+      },
+      {
+        "name": "Matías Denis",
+        "role": "Socio de DM Consultores",
+        "linkedin": "https://www.linkedin.com/in/matiasdenis/",
+        "specialty": "Procesos contables, liquidación de sueldos y cumplimiento fiscal."
+      }
+    ]
+  },
+  "posts": {
+    "sectionTitle": "Publicaciones",
+    "sectionSubtitle": "Artículos y novedades sobre temas contables, impositivos y financieros.",
+    "readMore": "Leer más",
+    "viewAll": "Ver todas las publicaciones"
+  },
+  "contact": {
+    "sectionTitle": "Contacto",
+    "sectionSubtitle": "¿Necesitás asesoramiento contable o financiero? No dudes en contactarnos.",
+    "info": {
+      "email": "fede.businesscase@gmail.com",
+      "phone": "+54 9 11 4438-1857",
+      "address": "Buenos Aires, Argentina",
+      "schedule": "Lunes a Viernes, 9:00 - 18:00"
+    },
+    "form": {
+      "name": "Nombre completo",
+      "email": "Correo electrónico",
+      "message": "Tu mensaje",
+      "send": "Enviar Mensaje"
+    }
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "quickLinks": "Navegación",
+    "social": "Redes Sociales"
+  }
+}

@@ -1,0 +1,66 @@
+---
+import { getTranslations, type Locale } from '../i18n/utils';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = getTranslations(locale);
+---
+
+<section class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#0f1a23] via-[#0a3265] to-[#145da0] overflow-hidden">
+  <!-- Background image with blur -->
+  <div class="absolute inset-0">
+    <img src="/images/backgrounds/1.jpg" alt="" class="w-full h-full object-cover blur-sm" />
+    <div class="absolute inset-0 bg-[#0f1a23]/70"></div>
+  </div>
+
+  <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <p class="text-accent font-medium text-lg sm:text-xl mb-4 tracking-wider uppercase animate-fade-in">
+      {t.hero.title}
+    </p>
+    <h1 class="font-display text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in-up">
+      {t.hero.name}
+    </h1>
+    <p class="text-white/80 text-lg sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in-up-delay">
+      {t.hero.tagline}
+    </p>
+    <a
+      href="#contact"
+      class="inline-block bg-accent hover:bg-accent-dark text-primary font-semibold px-8 py-4 rounded-lg text-lg transition-all duration-300 hover:shadow-lg hover:shadow-accent/25 animate-fade-in-up-delay-2"
+    >
+      {t.hero.cta}
+    </a>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+    <svg class="w-6 h-6 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+    </svg>
+  </div>
+</section>
+
+<style>
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out both;
+  }
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+  }
+  .animate-fade-in-up-delay {
+    animation: fadeInUp 0.8s ease-out 0.4s both;
+  }
+  .animate-fade-in-up-delay-2 {
+    animation: fadeInUp 0.8s ease-out 0.6s both;
+  }
+</style>
