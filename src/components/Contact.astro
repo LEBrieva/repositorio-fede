@@ -127,6 +127,7 @@ const t = getTranslations(locale);
       <!-- Contact Form -->
       <div class="bg-background-alt rounded-2xl p-8">
         <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" class="space-y-6">
+          <input type="hidden" name="form-name" value="contact" />
           <div class="hidden">
             <input name="bot-field" />
           </div>
