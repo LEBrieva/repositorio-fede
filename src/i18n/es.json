@@ -8,19 +8,15 @@
     "contact": "Contacto"
   },
   "hero": {
-    "name": "BC Consultores",
-    "title": "CONSULTORÍA FINANCIERA Y DE PROCESOS PARA EMPRESAS QUE QUIEREN CRECER CON ORDEN",
-    "tagline": "Acompañamos a pymes y emprendimientos que necesitan ordenar sus números y tomar decisiones con claridad.",
+    "name": "BC Consultora",
+    "title": "CONSULTORÍA FINANCIERA Y ESTRATÉGICA PARA PYMES",
+    "tagline": "Acompañamos a pequeñas y medianas empresas a tomar decisiones con claridad y hacer crecer su negocio.",
     "cta": "Contactanos"
   },
   "about": {
     "sectionTitle": "Nosotros",
-    "description": "Business Case nace con el propósito de acompañar a empresas medianas y grandes a profesionalizar su gestión, ordenar procesos y escalar resultados con liderazgo humano. Creemos que el verdadero cambio no solo se mide en números: también se mide en los equipos que prosperan, en las culturas que se sostienen y en los sistemas que siguen funcionando cuando el líder ya no está.",
-    "description2": "Fundada por Federico Cuadra, Contador Público (UBA) con más de 20 años de trayectoria liderando transformaciones financieras y operativas en compañías como Cervecería Quilmes y Cervepar. Hoy, Federico acompaña a empresas que buscan escalar con orden, claridad y propósito, aplicando soluciones reales y medibles desde su experiencia vivencial.",
-    "stats": {
-      "years": "Años de Experiencia",
-      "yearsValue": "+20"
-    }
+    "description": "Business Case Consultora nace con el propósito de acompañar a empresas medianas y grandes a profesionalizar su gestión, ordenar procesos y escalar resultados con liderazgo humano. Creemos que el verdadero cambio no solo se mide en números: también se mide en los equipos que prosperan, en las culturas que se sostienen y en los sistemas que siguen funcionando cuando el líder ya no está.",
+    "description2": "Fundada por Federico Cuadra, Contador Público (UBA) con más de 20 años de trayectoria liderando transformaciones financieras y operativas en compañías como Cervecería Quilmes y Cervepar. Hoy, Federico acompaña a empresas que buscan escalar con orden, claridad y propósito, aplicando soluciones reales y medibles desde su experiencia vivencial."
   },
   "services": {
     "sectionTitle": "Servicios",
@@ -101,7 +97,7 @@
     "sectionTitle": "Contacto",
     "sectionSubtitle": "Tu empresa factura bien pero a fin de mes no te queda nada? Hablemos.",
     "info": {
-      "email": "fede.businesscase@gmail.com",
+      "email": "administracion@bcconsultora.com.ar",
       "phone": "+54 9 11 4438-1857",
       "address": "Amaneceres Office, Mariano Castex 3489, Canning, Buenos Aires",
       "schedule": "Lunes a Viernes, 9:00 - 18:00"

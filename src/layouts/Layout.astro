@@ -8,12 +8,12 @@ interface Props {
 }
 
 const {
-  title = 'BC Consultores - Business Case | Asesoramiento Contable y Financiero',
-  description = 'Business Case Consultores. Asesoramiento contable, impositivo y financiero para pymes y emprendimientos.',
+  title = 'BC Consultora | Consultoría Financiera y de Procesos para Empresas',
+  description = 'Business Case Consultora. Consultoría financiera y de procesos para empresas que quieren crecer con orden. Acompañamos a pymes y empresas en Buenos Aires.',
   lang = 'es',
 } = Astro.props;
 
-const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://businesscaseconsultores.com';
+const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://bcconsultora.com.ar';
 const canonicalUrl = new URL(Astro.url.pathname, siteUrl).toString();
 const ogImage = `${siteUrl}/images/logos/logo-oscuro.png`;
 const altLang = lang === 'es' ? 'en' : 'es';
@@ -24,15 +24,15 @@ const ogLocaleAlt = lang === 'es' ? 'en_US' : 'es_AR';
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  "name": "Business Case Consultores",
-  "alternateName": "BC Consultores",
+  "name": "Business Case Consultora",
+  "alternateName": "BC Consultora",
   "description": lang === 'es'
-    ? "Asesoramiento contable, impositivo y financiero para pymes y emprendimientos en Buenos Aires."
-    : "Accounting, tax, and financial advisory for SMEs and startups in Buenos Aires.",
+    ? "Consultoría financiera y de procesos para empresas que quieren crecer con orden. Acompañamos a pymes y empresas en Buenos Aires."
+    : "Financial and process consulting for companies that want to grow with structure. We help SMEs and businesses in Buenos Aires.",
   "url": siteUrl,
   "logo": ogImage,
   "telephone": "+5491144381857",
-  "email": "fede.businesscase@gmail.com",
+  "email": "administracion@bcconsultora.com.ar",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Buenos Aires",
@@ -87,7 +87,7 @@ const localBusinessSchema = {
     <meta property="og:image" content={ogImage} />
     <meta property="og:locale" content={ogLocale} />
     <meta property="og:locale:alternate" content={ogLocaleAlt} />
-    <meta property="og:site_name" content="BC Consultores - Business Case" />
+    <meta property="og:site_name" content="BC Consultora - Business Case" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -99,6 +99,7 @@ const localBusinessSchema = {
     <script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
 
     <!-- Fonts -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -107,6 +108,9 @@ const localBusinessSchema = {
     />
   </head>
   <body class="antialiased">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:bg-primary focus:text-white focus:px-4 focus:py-2 focus:rounded-lg">
+      Saltar al contenido
+    </a>
     <slot />
 
     <script>

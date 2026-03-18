@@ -8,19 +8,15 @@
     "contact": "Contact"
   },
   "hero": {
-    "name": "BC Consultores",
-    "title": "Accounting and financial advisory for real businesses",
-    "tagline": "We help SMEs and startups that need to organize their numbers and make decisions with clarity.",
+    "name": "BC Consultora",
+    "title": "FINANCIAL AND STRATEGIC CONSULTING FOR SMEs",
+    "tagline": "We help small and medium-sized businesses make clear decisions and grow with financial order.",
     "cta": "Get in Touch"
   },
   "about": {
     "sectionTitle": "About Us",
     "description": "Business Case was founded with the purpose of helping medium and large companies professionalize their management, streamline processes, and scale results with human leadership. We believe that true change is not only measured in numbers — it is also measured in thriving teams, sustainable cultures, and systems that keep working when the leader is no longer there.",
-    "description2": "Founded by Federico Cuadra, a Public Accountant (UBA) with over 20 years of experience leading financial and operational transformations at companies like Cervecería Quilmes and Cervepar. Today, Federico helps companies looking to scale with order, clarity, and purpose, applying real and measurable solutions from his hands-on experience.",
-    "stats": {
-      "years": "Years of Experience",
-      "yearsValue": "+20"
-    }
+    "description2": "Founded by Federico Cuadra, a Public Accountant (UBA) with over 20 years of experience leading financial and operational transformations at companies like Cervecería Quilmes and Cervepar. Today, Federico helps companies looking to scale with order, clarity, and purpose, applying real and measurable solutions from his hands-on experience."
   },
   "services": {
     "sectionTitle": "Services",
@@ -101,7 +97,7 @@
     "sectionTitle": "Contact",
     "sectionSubtitle": "Need accounting or financial advisory? Don't hesitate to reach out.",
     "info": {
-      "email": "fede.businesscase@gmail.com",
+      "email": "administracion@bcconsultora.com.ar",
       "phone": "+54 9 11 4438-1857",
       "address": "Amaneceres Office, Mariano Castex 3489, Canning, Buenos Aires",
       "schedule": "Monday to Friday, 9:00 AM - 6:00 PM"

@@ -31,7 +31,7 @@ const avatars = [
     <!-- DM Consultores Logo -->
     <div class="flex justify-center mb-12">
       <div class="bg-background rounded-2xl p-6 shadow-sm">
-        <img src="/images/logos/logo-aliados.jpeg" alt="DM Consultores" class="h-16 object-contain" />
+        <img src="/images/logos/logo-aliados.jpeg" alt="DM Consultores" class="h-16 object-contain" loading="lazy" />
       </div>
     </div>
 
@@ -39,7 +39,7 @@ const avatars = [
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
       {t.allies.members.map((member, i) => (
         <div class="bg-background rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 border border-transparent hover:border-primary-light/20 text-center">
-          <img src={avatars[i]} alt={member.name} class="w-16 h-16 rounded-full object-cover mx-auto mb-6" />
+          <img src={avatars[i]} alt={member.name} class="w-16 h-16 rounded-full object-cover mx-auto mb-6" loading="lazy" />
           <h3 class="font-display text-xl font-semibold text-primary mb-1">
             <a href={member.linkedin} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 hover:text-primary-light transition-colors">
               {member.name}

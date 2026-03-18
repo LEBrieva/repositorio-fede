@@ -32,7 +32,7 @@ const t = getTranslations(locale);
             </svg>
           </div>
           <div>
-            <h4 class="font-semibold text-primary">Email</h4>
+            <p class="font-semibold text-primary">Email</p>
             <a href={`mailto:${t.contact.info.email}`} class="text-text-light hover:text-primary-light transition-colors">
               {t.contact.info.email}
             </a>
@@ -46,7 +46,7 @@ const t = getTranslations(locale);
             </svg>
           </div>
           <div>
-            <h4 class="font-semibold text-primary">{locale === 'en' ? 'Phone' : 'Teléfono'}</h4>
+            <p class="font-semibold text-primary">{locale === 'en' ? 'Phone' : 'Teléfono'}</p>
             <a href={`tel:${t.contact.info.phone.replace(/\s/g, '')}`} class="text-text-light hover:text-primary-light transition-colors">
               {t.contact.info.phone}
             </a>
@@ -61,7 +61,7 @@ const t = getTranslations(locale);
             </svg>
           </div>
           <div>
-            <h4 class="font-semibold text-primary">{locale === 'en' ? 'Location' : 'Ubicación'}</h4>
+            <p class="font-semibold text-primary">{locale === 'en' ? 'Location' : 'Ubicación'}</p>
             <a href="https://maps.app.goo.gl/AXnnfwzukfVhuqdv9" target="_blank" rel="noopener noreferrer" class="text-text-light hover:text-primary-light transition-colors">
               {t.contact.info.address}
             </a>
@@ -75,7 +75,7 @@ const t = getTranslations(locale);
             </svg>
           </div>
           <div>
-            <h4 class="font-semibold text-primary">{locale === 'en' ? 'Hours' : 'Horario'}</h4>
+            <p class="font-semibold text-primary">{locale === 'en' ? 'Hours' : 'Horario'}</p>
             <p class="text-text-light">{t.contact.info.schedule}</p>
           </div>
         </div>
@@ -100,6 +100,11 @@ const t = getTranslations(locale);
               <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
             </svg>
           </a>
+          <a href="https://www.instagram.com/bc.finanzas" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-primary hover:bg-primary-light text-white rounded-xl flex items-center justify-center transition-colors" aria-label="Instagram">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+            </svg>
+          </a>
         </div>
 
         <!-- Map -->
@@ -118,7 +123,10 @@ const t = getTranslations(locale);
 
       <!-- Contact Form -->
       <div class="bg-background-alt rounded-2xl p-8">
-        <form class="space-y-6">
+        <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" class="space-y-6">
+          <div class="hidden">
+            <input name="bot-field" />
+          </div>
           <div>
             <label for="name" class="block text-sm font-medium text-primary mb-2">
               {t.contact.form.name}
@@ -129,6 +137,7 @@ const t = getTranslations(locale);
               name="name"
               class="w-full px-4 py-3 bg-background border border-primary/10 rounded-xl text-text focus:outline-none focus:border-primary-light focus:ring-1 focus:ring-primary-light transition-colors"
               required
+              aria-required="true"
             />
           </div>
           <div>
@@ -141,6 +150,7 @@ const t = getTranslations(locale);
               name="email"
               class="w-full px-4 py-3 bg-background border border-primary/10 rounded-xl text-text focus:outline-none focus:border-primary-light focus:ring-1 focus:ring-primary-light transition-colors"
               required
+              aria-required="true"
             />
           </div>
           <div>
@@ -153,11 +163,12 @@ const t = getTranslations(locale);
               rows="5"
               class="w-full px-4 py-3 bg-background border border-primary/10 rounded-xl text-text focus:outline-none focus:border-primary-light focus:ring-1 focus:ring-primary-light transition-colors resize-none"
               required
+              aria-required="true"
             ></textarea>
           </div>
           <button
             type="submit"
-            class="w-full bg-primary-light hover:bg-primary-dark text-white font-semibold py-4 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-primary-light/25"
+            class="w-full bg-primary-light hover:bg-primary-dark text-white font-semibold py-4 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-primary-light/25 disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {t.contact.form.send}
           </button>
@@ -165,4 +176,63 @@ const t = getTranslations(locale);
       </div>
     </div>
   </div>
+
+  <div id="contact-toast" class="fixed bottom-6 right-6 z-50 hidden">
+    <div id="toast-content" class="px-6 py-4 rounded-xl shadow-lg text-white font-medium text-sm max-w-sm">
+    </div>
+  </div>
 </section>
+
+<script>
+  const form = document.querySelector('form[name="contact"]');
+  const submitBtn = form?.querySelector('button[type="submit"]');
+  const toast = document.getElementById('contact-toast');
+  const toastContent = document.getElementById('toast-content');
+  const originalBtnText = submitBtn?.textContent || '';
+
+  function showToast(message, success = true) {
+    if (!toast || !toastContent) return;
+    toastContent.textContent = message;
+    toastContent.className = `px-6 py-4 rounded-xl shadow-lg text-white font-medium text-sm max-w-sm ${success ? 'bg-green-600' : 'bg-red-600'}`;
+    toast.classList.remove('hidden');
+    setTimeout(() => toast.classList.add('hidden'), 4000);
+  }
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (!submitBtn || submitBtn.disabled) return;
+
+    const formData = new FormData(form);
+    submitBtn.disabled = true;
+
+    try {
+      const res = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData).toString(),
+      });
+
+      if (res.ok) {
+        showToast('¡Mensaje enviado correctamente!', true);
+        form.reset();
+        let seconds = 30;
+        submitBtn.textContent = `Enviado (${seconds}s)`;
+        const interval = setInterval(() => {
+          seconds--;
+          submitBtn.textContent = `Enviado (${seconds}s)`;
+          if (seconds <= 0) {
+            clearInterval(interval);
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalBtnText;
+          }
+        }, 1000);
+      } else {
+        showToast('Error al enviar. Intentá de nuevo.', false);
+        submitBtn.disabled = false;
+      }
+    } catch {
+      showToast('Error de conexión. Intentá de nuevo.', false);
+      submitBtn.disabled = false;
+    }
+  });
+</script>

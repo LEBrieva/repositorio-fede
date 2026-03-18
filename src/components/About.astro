@@ -8,7 +8,6 @@ interface Props {
 const { locale } = Astro.props;
 const t = getTranslations(locale);
 
-const stat = { value: t.about.stats.yearsValue, label: t.about.stats.years };
 ---
 
 <section id="about" class="reveal py-20 lg:py-28 bg-background">
@@ -16,8 +15,8 @@ const stat = { value: t.about.stats.yearsValue, label: t.about.stats.years };
     <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
       <!-- Photo -->
       <div class="relative">
-        <div class="aspect-[4/5] rounded-2xl overflow-hidden border border-primary/10 bg-background-alt flex items-center justify-center p-12">
-          <img src="/images/logos/logo-oscuro-completo.png" alt="Business Case Consultores" class="w-full max-w-xs object-contain" />
+        <div class="aspect-[4/4] rounded-2xl overflow-hidden border border-primary/10 bg-background-alt flex items-center justify-center p-10">
+          <img src="/images/logos/logo-oscuro-completo.png" alt="Business Case Consultora" class="w-full max-w-[280px] object-contain" loading="lazy" />
         </div>
         <!-- Decorative accent -->
         <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-primary-light/20 rounded-2xl -z-10"></div>
@@ -33,17 +32,9 @@ const stat = { value: t.about.stats.yearsValue, label: t.about.stats.years };
         <p class="text-text-light text-lg leading-relaxed mb-4">
           {t.about.description}
         </p>
-        <p class="text-text-light text-lg leading-relaxed mb-10">
+        <p class="text-text-light text-lg leading-relaxed">
           {t.about.description2}
         </p>
-
-        <!-- Stats -->
-        <div class="flex justify-start">
-          <div class="text-center px-8 py-5 bg-background-alt rounded-xl">
-            <div class="text-4xl font-bold text-primary-light mb-1">{stat.value}</div>
-            <div class="text-sm text-text-light">{stat.label}</div>
-          </div>
-        </div>
       </div>
     </div>
   </div>

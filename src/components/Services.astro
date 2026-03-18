@@ -13,8 +13,8 @@ const waBase = `https://wa.me/${phone}?text=`;
 
 function buildWaUrl(serviceTitle: string) {
   const msg = locale === 'es'
-    ? `Hola, me contacto desde la web de BC Consultores. Me interesa el servicio de *${serviceTitle}*. ¿Podrían darme más información?`
-    : `Hi, I'm reaching out from the BC Consultores website. I'm interested in the *${serviceTitle}* service. Could you give me more information?`;
+    ? `Hola, me contacto desde la web de BC Consultora. Me interesa el servicio de *${serviceTitle}*. ¿Podrían darme más información?`
+    : `Hi, I'm reaching out from the BC Consultora website. I'm interested in the *${serviceTitle}* service. Could you give me more information?`;
   return `${waBase}${encodeURIComponent(msg)}`;
 }
 

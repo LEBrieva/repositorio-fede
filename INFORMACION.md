@@ -5,14 +5,14 @@
 
 ### Correo electronico
 #### CORREO FEDE CORPORATIVO
-fede.businesscase@gmail.com
+administracion@bcconsultora.com.ar
 
 #### Contacto depto marketing
 mkt.businesscase@gmail.com
 
 ## BUSINESS CASE LINKEDIN 
 Acerca de: Linkedin (Empresa BC)
-Business Case nace con el propósito de acompañar a empresas medianas y grandes a profesionalizar su gestión, ordenar procesos y escalar resultados con liderazgo humano.
+Business Case Consultora nace con el propósito de acompañar a empresas medianas y grandes a profesionalizar su gestión, ordenar procesos y escalar resultados con liderazgo humano.
 Fundada por Federico Cuadra, Contador Público (UBA) con más de 20 años de trayectoria liderando transformaciones financieras y operativas en compañías como Cervecería Quilmes y Cervepar, la consultora combina visión estratégica, cercanía y experiencia real.
 Qué hacemos:
  🔹 Mejoramos indicadores financieros (EBITDA, FCF, P&L)
@@ -42,11 +42,11 @@ Si el fondo es naranja claro
 el BC BUSINESS CASE es el celeste negro
 
 ### Información BC 
-BC Consultores
+BC Consultora
 
-CONSULTORÍA FINANCIERA Y DE PROCESOS PARA EMPRESAS QUE QUIEREN CRECER CON ORDEN
+CONSULTORÍA FINANCIERA Y ESTRATÉGICA PARA PYMES
 
-Acompañamos a pymes y emprendimientos que necesitan ordenar sus números y tomar decisiones con claridad.
+Acompañamos a pequeñas y medianas empresas a tomar decisiones con claridad y hacer crecer su negocio.
 
 #### Qué hacemos? 
 Trabajamos para que tengas control sobre tu negocio.

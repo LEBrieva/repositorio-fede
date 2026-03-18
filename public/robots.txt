@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://businesscaseconsultores.com/sitemap-index.xml
+Sitemap: https://bcconsultora.com.ar/sitemap-index.xml
