@@ -24,8 +24,8 @@ En Business Case creemos que el verdadero cambio no solo se mide en números: ta
 📩 Si tu empresa está creciendo y necesitás estructura, estrategia o claridad para dar el siguiente paso, estamos para acompañarte.
 
 ## Sobre FEDERICO 
-Federico Cuadra es Contador Público y fundador de Business Case, una consultora especializada en gestión financiera, procesos operativos y liderazgo empresarial. Con más de 20 años de experiencia en el mundo corporativo —15 de ellos en Cervecería Quilmes— lideró transformaciones estratégicas en áreas clave como impuestos, control de gestión y planificación financiera.
-Ha dirigido equipos en contextos multiculturales y en distintos países de la región, logrando mejoras en indicadores como EBITDA, cash flow y productividad. Su enfoque combina visión de negocio, eficiencia operativa y liderazgo humano.
+Federico Cuadra es Contador Público y fundador de Business Case, una consultora especializada en gestión financiera, procesos operativos y liderazgo empresarial. Con más de 20 años de experiencia en el mundo corporativo —15 de ellos en Cervecería Quilmes, incluyendo su rol como Finance Head de Cervepar (Paraguay), donde lideró la transformación estratégica y financiera de la operación— lideró transformaciones estratégicas en áreas clave como impuestos, control de gestión y planificación financiera.
+Ha dirigido equipos en contextos multiculturales y en distintos países de la región, logrando mejoras en indicadores como la ganancia real de la empresa, el margen y el flujo de caja. Su enfoque combina visión de negocio, eficiencia operativa y liderazgo humano.
 Hoy, Fede acompaña a empresas medianas y grandes que buscan escalar con orden, claridad y propósito, aplicando soluciones reales y medibles desde su experiencia vivencial. Su misión es dejar una huella positiva en cada cliente, construyendo procesos que funcionen y equipos que disfruten trabajar juntos.
 
 En `portfolio-fede/public/images' 
@@ -44,7 +44,7 @@ el BC BUSINESS CASE es el celeste negro
 ### Información BC 
 BC Consultores
 
-Asesoramiento contable y financiero para negocios reales
+CONSULTORÍA FINANCIERA Y DE PROCESOS PARA EMPRESAS QUE QUIEREN CRECER CON ORDEN
 
 Acompañamos a pymes y emprendimientos que necesitan ordenar sus números y tomar decisiones con claridad.
 
@@ -65,7 +65,7 @@ Gestión Preventiva: Proyectamos impuestos para evitar sorpresas.
 Administración de personal: Sueldos, nóminas y todo lo relacionado a tu equipo.
 Consultoría estratégica
 Gestión Financiera: Indicadores claros para saber si vas bien.
-Procesos Sustentables: Detectamos mejoras para hacer más eficiente tu operación.
+Mejora de Procesos: Detectamos mejoras para hacer más eficiente tu operación.
 Gestión de Proyectos: Acompañamos transformaciones para ordenar y crecer.
 
 #### Red de aliados

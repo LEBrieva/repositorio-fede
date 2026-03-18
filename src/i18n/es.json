@@ -9,7 +9,7 @@
   },
   "hero": {
     "name": "BC Consultores",
-    "title": "Asesoramiento contable y financiero para negocios reales",
+    "title": "CONSULTORÍA FINANCIERA Y DE PROCESOS PARA EMPRESAS QUE QUIEREN CRECER CON ORDEN",
     "tagline": "Acompañamos a pymes y emprendimientos que necesitan ordenar sus números y tomar decisiones con claridad.",
     "cta": "Contactanos"
   },
@@ -19,11 +19,7 @@
     "description2": "Fundada por Federico Cuadra, Contador Público (UBA) con más de 20 años de trayectoria liderando transformaciones financieras y operativas en compañías como Cervecería Quilmes y Cervepar. Hoy, Federico acompaña a empresas que buscan escalar con orden, claridad y propósito, aplicando soluciones reales y medibles desde su experiencia vivencial.",
     "stats": {
       "years": "Años de Experiencia",
-      "yearsValue": "+20",
-      "clients": "Clientes Acompañados",
-      "clientsValue": "+50",
-      "consultations": "Proyectos Realizados",
-      "consultationsValue": "+100"
+      "yearsValue": "+20"
     }
   },
   "services": {
@@ -51,10 +47,10 @@
       },
       {
         "title": "Gestión Financiera",
-        "description": "Indicadores claros para saber si vas bien. Mejoramos indicadores como EBITDA, cash flow y productividad."
+        "description": "Indicadores claros para saber si vas bien. Mejoramos indicadores como la ganancia real de la empresa, el margen y el flujo de caja."
       },
       {
-        "title": "Procesos Sustentables",
+        "title": "Mejora de Procesos",
         "description": "Detectamos mejoras para hacer más eficiente tu operación. Optimizamos procesos internos con medición de impacto."
       },
       {
@@ -67,7 +63,7 @@
     "sectionTitle": "Experiencia",
     "founderName": "Federico Cuadra",
     "founderRole": "Fundador & Director",
-    "founderBio": "Contador Público (UBA) con más de 20 años de experiencia en el mundo corporativo — 15 de ellos en Cervecería Quilmes — donde lideró transformaciones estratégicas en áreas clave como impuestos, control de gestión y planificación financiera. Ha dirigido equipos en contextos multiculturales y en distintos países de la región.",
+    "founderBio": "Contador Público (UBA) con más de 20 años de experiencia en el mundo corporativo — 15 de ellos en Cervecería Quilmes, incluyendo su rol como Finance Head de Cervepar (Paraguay), donde lideró la transformación estratégica y financiera de la operación. Ha dirigido equipos en contextos multiculturales y en distintos países de la región.",
     "originTitle": "El origen de Business Case",
     "originText": "Business Case surge de la convicción de que las empresas necesitan más que un contador: necesitan un socio estratégico que entienda su negocio desde adentro. Combinamos visión estratégica, cercanía y experiencia real para acompañar a empresas que buscan escalar con orden y propósito."
   },
@@ -103,11 +99,11 @@
   },
   "contact": {
     "sectionTitle": "Contacto",
-    "sectionSubtitle": "¿Necesitás asesoramiento contable o financiero? No dudes en contactarnos.",
+    "sectionSubtitle": "Tu empresa factura bien pero a fin de mes no te queda nada? Hablemos.",
     "info": {
       "email": "fede.businesscase@gmail.com",
       "phone": "+54 9 11 4438-1857",
-      "address": "Canin, Buenos Aires, Argentina",
+      "address": "Amaneceres Office, Mariano Castex 3489, Canning, Buenos Aires",
       "schedule": "Lunes a Viernes, 9:00 - 18:00"
     },
     "form": {

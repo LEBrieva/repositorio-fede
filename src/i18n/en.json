@@ -19,11 +19,7 @@
     "description2": "Founded by Federico Cuadra, a Public Accountant (UBA) with over 20 years of experience leading financial and operational transformations at companies like Cervecería Quilmes and Cervepar. Today, Federico helps companies looking to scale with order, clarity, and purpose, applying real and measurable solutions from his hands-on experience.",
     "stats": {
       "years": "Years of Experience",
-      "yearsValue": "+20",
-      "clients": "Clients Served",
-      "clientsValue": "+50",
-      "consultations": "Projects Completed",
-      "consultationsValue": "+100"
+      "yearsValue": "+20"
     }
   },
   "services": {
@@ -107,7 +103,7 @@
     "info": {
       "email": "fede.businesscase@gmail.com",
       "phone": "+54 9 11 4438-1857",
-      "address": "Canin, Buenos Aires, Argentina",
+      "address": "Amaneceres Office, Mariano Castex 3489, Canning, Buenos Aires",
       "schedule": "Monday to Friday, 9:00 AM - 6:00 PM"
     },
     "form": {

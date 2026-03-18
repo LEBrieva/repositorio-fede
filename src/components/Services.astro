@@ -50,13 +50,13 @@ const waIcon = `<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><pa
       </p>
     </div>
 
-    <!-- Block 1 -->
+    <!-- Block 1: Consultoría Estratégica -->
     <div class="mb-16">
       <h3 class="font-display text-xl sm:text-2xl font-semibold text-primary-light mb-8 text-center">
-        {t.services.block1Title}
+        {t.services.block2Title}
       </h3>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        {block1Items.map((service, i) => (
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {block2Items.map((service, i) => (
           <a
             href={buildWaUrl(service.title)}
             target="_blank"
@@ -64,7 +64,7 @@ const waIcon = `<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><pa
             class="group bg-background rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 border border-transparent hover:border-primary-light/20 flex flex-col"
           >
             <div class="w-14 h-14 bg-primary/5 group-hover:bg-primary-light/10 rounded-xl flex items-center justify-center text-primary group-hover:text-primary-light transition-colors duration-300 mb-6">
-              <Fragment set:html={block1Icons[i]} />
+              <Fragment set:html={block2Icons[i]} />
             </div>
             <h3 class="font-display text-xl font-semibold text-primary mb-3">
               {service.title}
@@ -81,13 +81,13 @@ const waIcon = `<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><pa
       </div>
     </div>
 
-    <!-- Block 2 -->
+    <!-- Block 2: Contable, Impositivo y Adm. de Personal -->
     <div>
       <h3 class="font-display text-xl sm:text-2xl font-semibold text-primary-light mb-8 text-center">
-        {t.services.block2Title}
+        {t.services.block1Title}
       </h3>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {block2Items.map((service, i) => (
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        {block1Items.map((service, i) => (
           <a
             href={buildWaUrl(service.title)}
             target="_blank"
@@ -95,7 +95,7 @@ const waIcon = `<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><pa
             class="group bg-background rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 border border-transparent hover:border-primary-light/20 flex flex-col"
           >
             <div class="w-14 h-14 bg-primary/5 group-hover:bg-primary-light/10 rounded-xl flex items-center justify-center text-primary group-hover:text-primary-light transition-colors duration-300 mb-6">
-              <Fragment set:html={block2Icons[i]} />
+              <Fragment set:html={block1Icons[i]} />
             </div>
             <h3 class="font-display text-xl font-semibold text-primary mb-3">
               {service.title}

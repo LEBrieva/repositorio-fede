@@ -8,11 +8,7 @@ interface Props {
 const { locale } = Astro.props;
 const t = getTranslations(locale);
 
-const stats = [
-  { value: t.about.stats.yearsValue, label: t.about.stats.years },
-  { value: t.about.stats.clientsValue, label: t.about.stats.clients },
-  { value: t.about.stats.consultationsValue, label: t.about.stats.consultations },
-];
+const stat = { value: t.about.stats.yearsValue, label: t.about.stats.years };
 ---
 
 <section id="about" class="reveal py-20 lg:py-28 bg-background">
@@ -42,13 +38,11 @@ const stats = [
         </p>
 
         <!-- Stats -->
-        <div class="grid grid-cols-3 gap-6">
-          {stats.map((stat) => (
-            <div class="text-center p-4 bg-background-alt rounded-xl">
-              <div class="text-3xl font-bold text-primary-light mb-1">{stat.value}</div>
-              <div class="text-sm text-text-light">{stat.label}</div>
-            </div>
-          ))}
+        <div class="flex justify-start">
+          <div class="text-center px-8 py-5 bg-background-alt rounded-xl">
+            <div class="text-4xl font-bold text-primary-light mb-1">{stat.value}</div>
+            <div class="text-sm text-text-light">{stat.label}</div>
+          </div>
         </div>
       </div>
     </div>
