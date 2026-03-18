@@ -215,9 +215,10 @@ const t = getTranslations(locale);
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: new URLSearchParams(formData).toString(),
+        redirect: 'manual',
       });
 
-      if (res.ok) {
+      if (res.ok || res.type === 'opaqueredirect' || res.status === 302 || res.status === 303) {
         showToast('¡Mensaje enviado correctamente!', true);
         form.reset();
         let seconds = 30;
