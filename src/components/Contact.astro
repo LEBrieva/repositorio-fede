@@ -187,58 +187,61 @@ const t = getTranslations(locale);
   </div>
 </section>
 
-<script>
-  const form = document.querySelector('form[name="contact"]');
-  const submitBtn = form?.querySelector('button[type="submit"]');
-  const toast = document.getElementById('contact-toast');
-  const toastContent = document.getElementById('toast-content');
-  const originalBtnText = submitBtn?.textContent || '';
-  const waNumber = '5491144381857';
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', function() {
+    var form = document.querySelector('form[name="contact"]');
+    var submitBtn = form ? form.querySelector('button[type="submit"]') : null;
+    var toast = document.getElementById('contact-toast');
+    var toastContent = document.getElementById('toast-content');
+    var originalBtnText = submitBtn ? submitBtn.textContent : '';
+    var waNumber = '5491144381857';
 
-  function showToast(html, success = true) {
-    if (!toast || !toastContent) return;
-    toastContent.innerHTML = html;
-    toastContent.className = `px-6 py-4 rounded-xl shadow-lg text-white font-medium text-sm max-w-sm ${success ? 'bg-green-600' : 'bg-red-600'}`;
-    toast.classList.remove('hidden');
-    setTimeout(() => toast.classList.add('hidden'), 6000);
-  }
+    function showToast(html, success) {
+      if (!toast || !toastContent) return;
+      toastContent.innerHTML = html;
+      toastContent.className = 'px-6 py-4 rounded-xl shadow-lg text-white font-medium text-sm max-w-sm ' + (success ? 'bg-green-600' : 'bg-red-600');
+      toast.classList.remove('hidden');
+      setTimeout(function() { toast.classList.add('hidden'); }, 6000);
+    }
 
-  form?.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    if (!submitBtn || submitBtn.disabled) return;
+    if (form) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        if (!submitBtn || submitBtn.disabled) return;
 
-    const formData = new FormData(form);
-    submitBtn.disabled = true;
+        var formData = new FormData(form);
+        submitBtn.disabled = true;
 
-    try {
-      const res = await fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formData).toString(),
-        redirect: 'manual',
-      });
-
-      if (res.ok || res.type === 'opaqueredirect' || res.status === 302 || res.status === 303) {
-        showToast('¡Mensaje enviado correctamente!', true);
-        form.reset();
-        let seconds = 30;
-        submitBtn.textContent = `Enviado (${seconds}s)`;
-        const interval = setInterval(() => {
-          seconds--;
-          submitBtn.textContent = `Enviado (${seconds}s)`;
-          if (seconds <= 0) {
-            clearInterval(interval);
+        fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(formData).toString(),
+        })
+        .then(function(res) {
+          if (res.ok) {
+            showToast('¡Mensaje enviado correctamente!', true);
+            form.reset();
+            var seconds = 30;
+            submitBtn.textContent = 'Enviado (' + seconds + 's)';
+            var interval = setInterval(function() {
+              seconds--;
+              submitBtn.textContent = 'Enviado (' + seconds + 's)';
+              if (seconds <= 0) {
+                clearInterval(interval);
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalBtnText;
+              }
+            }, 1000);
+          } else {
+            showToast('No se pudo enviar. <a href="https://wa.me/' + waNumber + '" target="_blank" class="underline font-bold">Contactanos por WhatsApp</a>', false);
             submitBtn.disabled = false;
-            submitBtn.textContent = originalBtnText;
           }
-        }, 1000);
-      } else {
-        showToast(`No se pudo enviar. <a href="https://wa.me/${waNumber}" target="_blank" class="underline font-bold">Contactanos por WhatsApp</a>`, false);
-        submitBtn.disabled = false;
-      }
-    } catch {
-      showToast(`Error de conexión. <a href="https://wa.me/${waNumber}" target="_blank" class="underline font-bold">Contactanos por WhatsApp</a>`, false);
-      submitBtn.disabled = false;
+        })
+        .catch(function() {
+          showToast('Error de conexión. <a href="https://wa.me/' + waNumber + '" target="_blank" class="underline font-bold">Contactanos por WhatsApp</a>', false);
+          submitBtn.disabled = false;
+        });
+      });
     }
   });
 </script>
